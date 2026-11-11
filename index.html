@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alkumar — Software Development</title>
+  <meta name="description" content="Alkumar is an independent software developer building mobile apps, games, web applications and other digital products.">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --card: #ffffff;
+      --text: #1f2328;
+      --muted: #59636e;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1115;
+        --card: #171a21;
+        --text: #e6e8eb;
+        --muted: #9aa3ad;
+        --accent: #60a5fa;
+        --border: #2a2f39;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 720px; margin: 0 auto; padding: 48px 16px 32px; }
+    header h1 { margin: 0; font-size: 2.25rem; letter-spacing: -0.02em; }
+    header p { margin: 8px 0 0; color: var(--muted); font-size: 1.1rem; }
+    section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-top: 24px;
+    }
+    h2 { margin: 0 0 12px; font-size: 1.2rem; }
+    ul { margin: 0; padding-left: 20px; }
+    dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 8px 16px; }
+    dt { color: var(--muted); }
+    dd { margin: 0; overflow-wrap: anywhere; }
+    a { color: var(--accent); }
+    footer { color: var(--muted); font-size: 0.9rem; text-align: center; margin-top: 32px; }
+    @media (max-width: 480px) {
+      dl { grid-template-columns: 1fr; gap: 2px; }
+      dd { margin-bottom: 10px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Alkumar</h1>
+      <p>Independent software development</p>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Alkumar designs, builds and publishes software. Our work covers a broad
+        range of digital products, including:
+      </p>
+      <ul>
+        <li>Mobile applications for Android and other platforms</li>
+        <li>Games and interactive entertainment</li>
+        <li>Productivity, utility and educational tools</li>
+        <li>Web applications and online services</li>
+        <li>Custom software solutions</li>
+      </ul>
+      <p>
+        Our apps are distributed through official stores such as Google Play.
+        For product-specific questions, please use the contact details below.
+      </p>
+    </section>
+
+    <section id="trader">
+      <h2>Trader information</h2>
+      <p>
+        Alkumar is a trader as defined by the EU Digital Services Act. The
+        following details identify the business responsible for the apps it
+        publishes.
+      </p>
+      <dl>
+        <dt>Trader name</dt>
+        <dd>[LEGAL NAME OR REGISTERED BUSINESS NAME]</dd>
+
+        <dt>Address</dt>
+        <dd>[STREET ADDRESS], [CITY], [POSTAL CODE], [COUNTRY]</dd>
+
+        <dt>Email</dt>
+        <dd><a href="mailto:contact@alkumar.com">contact@alkumar.com</a></dd>
+
+        <dt>Phone</dt>
+        <dd>[PHONE NUMBER WITH COUNTRY CODE]</dd>
+
+        <dt>Registration</dt>
+        <dd>[BUSINESS REGISTRATION OR TAX NUMBER, IF APPLICABLE]</dd>
+
+        <dt>Website</dt>
+        <dd><a href="https://alkumar.com">alkumar.com</a></dd>
+      </dl>
+      <p>
+        We comply with applicable EU law, including consumer protection rules,
+        and only offer products and services that meet those requirements.
+      </p>
+    </section>
+
+    <section id="support">
+      <h2>Support</h2>
+      <p>
+        For support, feedback, or questions about any of our apps, email
+        <a href="mailto:contact@alkumar.com">contact@alkumar.com</a>. Please
+        include the name of the app and your device so we can help quickly.
+      </p>
+    </section>
+
+    <footer>
+      &copy; <span id="year">2026</span> Alkumar. All rights reserved.
+    </footer>
+  </main>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
